@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+
+{% block content %}
+<div>
+	{% placeholder column1 %}
+	{% block column1 %}{% endblock column1 %}
+</div>
+<div>
+	{% placeholder column2 %}
+	{% block column2 %}{% endblock column2 %}
+</div>
+{% endblock content %}

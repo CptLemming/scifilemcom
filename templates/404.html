@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% load i18n cms_tags %}
+
+{% block bodyclass %}status-404{% endblock %}
+{% block pagetitle %}404 &mdash; {% blocktrans %}Page Not Found{% endblocktrans %}{% endblock %}
+
+{% block content %}
+<div class="pagenotfound">
+    <div class="wrap">
+        <a href="#"><img src="web/images/not.png" title="404" /></a>
+        <h1>Page Not Found !</h1>
+    </div>
+</div>
+{% endblock %}

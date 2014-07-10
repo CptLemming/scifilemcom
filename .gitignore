@@ -1,0 +1,10 @@
+*.pyc
+*.pyo
+.DS_Store
+*~
+config/settings_local.py
+.project
+.pydevproject
+.settings
+
+/.idea/
