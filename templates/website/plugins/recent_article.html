@@ -1,0 +1,14 @@
+{% load sekizai_tags thumbnail %}
+
+<div class="articles p-sections">
+    <div class="wrap">
+        <h3>{{ instance.title}}</h3>
+        {% for item in items %}
+            {% if forloop.first %}<ul>{% endif %}
+            <li><a href="{{ item.link_page.get_absolute_url }}">{{ item.link_text }}</a></li>
+            {% if forloop.counter|divisibleby:instance.items_per_column %}</ul><ul>{% endif %}
+            {% if forloop.last %}</ul>{% endif %}
+        {% endfor %}
+        <div class="clear"> </div>
+    </div>
+</div>

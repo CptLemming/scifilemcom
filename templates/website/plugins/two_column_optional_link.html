@@ -1,0 +1,10 @@
+{% load sekizai_tags %}
+{% load thumbnail l10n %}
+
+<div class="section">
+    <div class="column2">{{ instance.left_col | safe }}</div>
+    <div class="column2">{{ instance.right_col | safe }}</div>
+    {% if instance.link_page %}
+    <h4><a href="{{ instance.link_page.get_absolute_url }}">{{ instance.link_text }}</a></h4>
+    {% endif %}
+</div>

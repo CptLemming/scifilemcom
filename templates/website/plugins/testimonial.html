@@ -1,0 +1,9 @@
+{% load sekizai_tags %}
+
+<div class="testimonial box">
+    <div class="testimonials">
+        {% if instance.testimonial %}<h3>{{ instance.testimonial }}</h3>{% endif %}
+        {{ instance.copy | safe }}
+        <span>{{ instance.cite }}</span>
+    </div>
+</div>
