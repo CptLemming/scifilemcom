@@ -1,6 +1,0 @@
-{% spaceless %}
-{% if not allow_robots %}
-User-agent: *
-Disallow: /
-{% endif %}
-{% endspaceless %}
