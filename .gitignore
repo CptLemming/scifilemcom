@@ -6,5 +6,6 @@ config/settings_local.py
 .project
 .pydevproject
 .settings
+*.sqlite
 
 /.idea/
