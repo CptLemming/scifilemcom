@@ -8,7 +8,7 @@ django-debug-toolbar
 django-reversion==1.8.0
 django-axes
 django-filer
-cmsplugin-filer
+cmsplugin-filer==0.10.1
 python-memcached
 mysql-python
 django-model-utils
